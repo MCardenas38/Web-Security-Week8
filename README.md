@@ -45,11 +45,37 @@ Vulnerability #2: Cross-Site Scripting
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure Direct Object Reference (IDOR)
+ * GIF Walkthrough:
+   <img src='red1.gif' title='Red 1' width='' alt='' />
+ * Description: Find sales person/people that is/are not listed in the ``` Find a Salesperson``` in any of the sections. In order to achieve this, click on an exisiting salesperson and in the url set the ```id``` attribute to different id numbers such as 9, 10, 11, etc..
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Request Forgery (CSRF)
+ * GIF Walkthrough: 
+   <img src='red2.gif' title='Red 2' width='' alt='' />
+ * Description: In this exploit, we can see from the GIF that the user who doesn't have admin privilege can still access the website's data and change it. 
 
 
 ## Notes
 
 Describe any challenges encountered while doing the work
+
+## Resources
+
+GIFs created with [LiceCap](http://www.cockos.com/licecap/).
+
+## License
+
+    Copyright [2018] [Connie Wu]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
