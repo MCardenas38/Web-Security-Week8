@@ -42,7 +42,6 @@ Vulnerability #2: Cross-Site Scripting
  * Description: (Steps to recreate) In the Green section, click on ```Contact``` and enter into the form, where in the Feedback textbook write a alert script such as ```<script>alert('Connie found the XSS!')</script>```. Then login and from there, click on ```Feedback``` on the dashboard and you will encounter your Feedback lssert pop-up. 
  NOTE: From the GIF, it can be seen that other alert pop-ups are also encountered; they are feedbacks that are already in the system submitted by others, but our recent feedback input will be shown last. 
 
-
 ## Red
 
 Vulnerability #1: Insecure Direct Object Reference (IDOR)
@@ -55,6 +54,10 @@ Vulnerability #2: Cross-Site Request Forgery (CSRF)
    <img src='red2.gif' title='Red 2' width='' alt='' />
  * Description: In this exploit, we can see from the GIF that the user who doesn't have admin privilege can still access the website's data and change it. 
 
+## Bonus Objective 2: Build on Objective #4 (Cross-Site Scripting)
+ * GIF Walkthrough: 
+   <img src='bonus.gif' title='bonus' width='' alt='' />
+ * Description: (Steps to recreate) In the Green section, go to ```Feedback``` and fill in the form along with a redirect script write in the Feedback textbox like for instance: ```<script>document.location="https://www.facebook.com"</script>```. Then go to login and click ```Feedback``` and you will encounter Feedbacks from others and your feedback with directs you to the link you wrote in the Feedback text box. 
 
 ## Notes
 
