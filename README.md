@@ -31,9 +31,16 @@ Vulnerability #2: Session Hijacking/Fixation
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Username Enumeration
+ * GIF Walkthrough:
+   <img src='green1.gif' title='Green 1' width='' alt='' />
+ * Description: As you can see from above, the GIF illustrates that when you enter in a username that exisits in the system/database along with a random password and you inspect the page the class of the span HTML attribute is ```failure```. Also, when a wrong username/ a username that isn't in the system is entered with a random password, inspect will display ```failed```. 
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Scripting
+ * GIF Walkthrough:
+   <img src='green2.gif' title='Green 2' width='' alt='' />
+ * Description: (Steps to recreate) In the Green section, click on ```Contact``` and enter into the form, where in the Feedback textbook write a alert script such as ```<script>alert('Connie found the XSS!')</script>```. Then login and from there, click on ```Feedback``` on the dashboard and you will encounter your Feedback lssert pop-up. 
+ NOTE: From the GIF, it can be seen that other alert pop-ups are also encountered; they are feedbacks that are already in the system submitted by others, but our recent feedback input will be shown last. 
 
 
 ## Red
